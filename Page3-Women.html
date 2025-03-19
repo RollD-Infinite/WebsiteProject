@@ -1,0 +1,371 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+	
+	<title>Roll a D-Infinite</title>
+	
+		<style type="text/css">
+	
+		/*==CSS Reset==*/
+			/* http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)*/
+
+			a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, del, details, dd, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+
+			/* HTML5 display-role reset for older browsers */
+
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+				display: block;
+			}
+			body{
+				line-height: 1;
+			}
+			blockquote, q{
+				quotes: none;
+			}
+			blockquote:before, blockquote:after, q:before, q:after{
+				content: '';
+				content: none;
+			}
+			ol, ul{
+				list-style: none;
+			}
+			table{
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+		/*==End CSS Reset==*/
+
+			body{
+				background-image:url("https://i.imghippo.com/files/mh2065wGs.jpg");
+			}
+			
+			#wrapper{
+				width: 85%;
+				margin: 0 auto;
+			}
+			
+			header{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+						
+			.header-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: 3.5vw;
+				width: 40%;
+				float: right;
+				margin-top: 3%;
+			}
+			
+			header>figure>img{
+				width: 15%;
+				clear: left;
+			}
+			
+			h1{
+				font-family: "Pacifico", serif;
+				font-size: 8vw;
+				width: 80%;
+				float: right;
+			}
+			
+			nav{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+			
+			nav>ul{
+				font-size: 1.25em;
+				margin: 0 auto;
+				width: 90%;
+			}
+			
+			nav>ul>li{
+				font-family: "Caveat Brush", serif;
+				display: inline;
+				padding: .5% 5%;
+			}
+			
+			li.nav-item a:hover{
+				background-color: #E1BECE;
+			}
+			
+			#main-content{
+				width: 54%;
+				margin: 0 1% 1% 1%;
+				background-color: #E2F1CB;
+				float: left;
+				padding: 2%;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.inline-text{
+				float: right;
+				padding: 1% 0;
+				line-height: 1.25em;
+			}
+			
+			.main-figure-a>img{
+				width: 95%;
+			}
+			
+			.main-figure-a{
+				width: 45%;
+				margin: 0 auto;
+				padding: 0 3%;
+				float: right;
+			}
+			
+			.main-figure{
+				width: 90%;
+				margin: 1% auto;
+			}
+			
+			.main-figure>img{
+				width: 90%;
+			}
+			
+			h2{
+				margin-bottom: 1%;
+				padding: 0 2% 2% 0;
+				font-family: "Caveat Brush", serif;
+				font-size: 1.5em;
+				color: #632D76;
+			}
+			
+			h3{
+				margin-bottom: 1%;
+				padding: 0 2% 2% 0;
+				font-family: "Caveat Brush", serif;
+				color: #632D76;
+			}
+			
+			article{
+				padding: 3% 1%;
+				margin-bottom: 2%;
+			}
+			
+			p{
+				padding: 1% 0;
+				line-height: 1.25em;
+			}
+			
+			#sidebar{
+				width: 34%;
+				margin: 0 1% 1% 1%;
+				padding: 2%;
+				background-color: #E2F1CB;
+				float: left;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.sidebar-figure>img{
+				margin: 2% auto;
+				width: 95%;
+			}
+			
+			.sidebar-figure{
+				margin: 2% auto;
+				width: 50%;
+			}
+			
+			figcaption{
+				margin: 2% auto;
+				font-family: "Caveat Brush", serif;
+			}
+			
+			footer{
+				clear: left;
+				padding: 2%;
+				margin: 1% auto;
+				background-color: #99BE60;
+				color: #632D76;
+			}
+			
+			.footer-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: larger;
+			}
+			
+			blockquote{
+				margin: 2% auto;
+				padding: 5% 7%;
+				font-family: "Caveat Brush", serif;
+				color: #953462;
+				background-color: #FFDCD7;
+				width: 85%;
+				line-height: 1.5em;
+			}
+			
+		</style>
+	
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body>
+	<!--Start Wrapper-->
+	<div id="wrapper">
+	
+		<header>
+		
+			<h1>Roll a D-Infinite</h1>
+			
+			<p class="header-subtitle">Many Faces, One Whole</p>
+			
+			<figure>
+				<img src="https://i.imghippo.com/files/evG5132wvY.png" alt="Kawaii Kitty with a D20">
+			</figure>
+							
+		</header>
+		
+		<nav>
+			
+			<ul>
+				<li class="nav-item"><a href="Page1-Crafting.html">Crafting</a></li>
+				<li class="nav-item"><a href="Page2-Adulting.html">Adulting</a></li>
+				<li class="nav-item"><a href="Page4-Recipes.html">Cooking</a></li>
+				<li class="nav-item"><a href="Page5-Quotes.html">Quoting</a></li>
+			</ul>
+			
+		</nav>
+		
+		<!--Start Main-Content-->
+		<div id="main-content">
+		
+			<article class="inline-text">
+			
+				<h2>St. Catherine of Siena: Model of a Modern Woman</h2>
+			
+				<figure class="main-figure-a">
+					<img src="https://i.imghippo.com/files/X9685oQw.jpg" alt="St. Catherine of Siena">
+					<figcaption>Patron Saint of the Modern Woman</figcaption>
+				</figure>
+				
+				<p>
+					St. Catherine of Siena (1347-1380) was the second woman to be named as a Doctor of the Church, for her mystical writings and her insightful theological letters.  Her writings are among the most influential of both religious mystics and Italian literature.  She stepped out of the traditional gender roles of her time and spoke boldly on religious and secular politics in her time.  
+				</p>
+				
+				<p>
+					<h3>"Be who God meant you to be and you will set the world on fire"</h3>
+					
+					Caterina di Jacopo di Benincasa was born in 1347, during a time of turbulent politics between warring Italian city-states and even more turbulent papal politics. Her father was a cloth dyer in the newly growing middle class. When she was 16, her parents arranged to have her married to her older sister’s widower – in protest, she cut off her hair and began a strict fast. Eventually, her parents allowed her to remain unmarried and live an active and prayerful life outside of a convent.
+				</p>
+				
+				<p>
+					<h3>“Don't make it necessary for me to complain about you to Christ crucified.”</h3>
+					
+					By age 21, Catherine was travelling throughout Northern and Central Italy, calling for reform of clergy and repentance and renewal for all faithful.  She wrote letters to, and argued in person with, authority figures all around Italy, calling for peace between warring factions.  Her surviving letters show a quick wit, scalding admonitions, and a deep wisdom.  Catherine had a long correspondence with Pope Gregory XI, asking for clerical reform and to return the Papal Household from Avignon, France to Rome.  (For several generations, the pope had been a “guest” of the king of France and resided in Avignon.)  As it was put to me in a lecture once, Catherine told the pope “With all due respect, shit or get off the pot”.
+				</p>
+				
+				<p>
+					<h3>“Nothing great is ever achieved without much enduring.”</h3>
+					
+					As a woman in the 1300s, Catherine defied her parents and tradition by staying an unmarried laywoman. She wrote sassy, insightful letters to influential and powerful people. She traveled and debated with many political and church leaders. Her writings show that she submitted to the authority of Church but she wasn’t ever submissive.  St. Catherine of Siena was not a “well-behaved” woman by the standards of her time but definitely made history.
+				</p>
+			
+			</article>
+			
+			<article>
+			
+				<h2>A Canaanite Woman: A Desperate Mother</h2>
+			
+				<figure class="main-figure">
+					<img src="https://i.imghippo.com/files/gn1405Utk.jpg" alt="Painting of Matthew 15:21-28">
+					<figcaption>Jean Germain Drouais (1763-1788), La Cananéenne aux pieds du Christ</figcaption>
+				</figure>
+				
+				<p>
+					A few weeks ago, we read Matthew 15:21-28 at Mass.  Fr. Jake spoke of this woman in his homily, portraying her as a demure or subdued figure.  As a mother, I can’t imagine that she was at all demure or quiet.  Her child was sick and she was at her wits end.  
+				</p>
+				
+				<p>
+					Then Jesus went from that place and withdrew to the region of Tyre and Sidon.  And behold, a Canaanite woman of that district came and called out, “Have pity on me, Lord, Son of David! My daughter is tormented by a demon.”  But he did not say a word in answer to her. His disciples came and asked him, “Send her away, for she keeps calling out after us.”  He said in reply, “I was sent only to the lost sheep of the house of Israel.”  But the woman came and did him homage, saying, “Lord, help me.”  He said in reply, “It is not right to take the food of the children and throw it to the dogs.”  She said, “Please, Lord, for even the dogs eat the scraps that fall from the table of their masters.”  Then Jesus said to her in reply, “O woman, great is your faith! Let it be done for you as you wish.” And her daughter was healed from that hour.
+					<br><a href="https://bible.usccb.org/bible/matthew/15?21=#48015028">Matthew 15:21-28</a>, from New American Bible, revised edition
+				</p>
+				
+				<p>
+					As I was reading this, I heard it in a voice of a woman pushed to the end of her energy.  
+					
+						<blockquote>
+							Woman, in a tone of desperation: Help me save my child.  You are able to do what others cannot.<br> 
+							Disciples, with condensation: Shove off.  You don’t belong here. <br> 
+							Woman, more desperate: Save my daughter.  You are the only one who has the ability to do so.  <br>
+							Jesus, irritated snapping: It is not right to take the food of the children and throw it to the dogs.<br>
+							Woman, snapping back quickly: Even the dogs eat the scraps that fall from the table.  <br><br>
+							Silence, while the crowd is shocked that she snapped back and she looks horrified that she actually responded so aggressively.<br><br>
+							Jesus, laughing: O woman, great is your faith! Let it be done for you as you wish.
+						</blockquote>				
+				</p>
+				
+				<p>
+					In this era, women were “second-class citizens”.  They had no rights, no power in society, and were defined by their relationship to the male head of the household.  A daughter was even less than a grown woman.  She needed to be cloistered away from anyone outside of the family, needed a dowery, needed a marriage arranged, and was still a burden of concern for an Israelite father.  A son brought wealth to a family: he was able to learn his father’s trade and work, to marry and bring in a dowery.  
+				</p>
+				
+				<p>
+					For a woman to go out and speak to a man she was not related to was scandalous.  A woman did not assert herself, did not “meddle” in the affairs of the men, and was expected to serve rather than be served.  Here we read of a woman, on her own, addressing a man outside of her family, trying to draw his attention away from the other men he was speaking with.  And it was concerning a daughter.  On top of that, she is a Gentile.  She would be considered “unclean” by Jewish law and there would be possible repercussions of even a simple conversation.  
+				</p>
+				
+				<p>
+					Jesus ignored her.  His disciples tried to drive her off.  She was called a “dog” – the worst insult that an Israelite could give to a Gentile.  Yet, she still called out, still bowed to Jesus, persevered in her request for a miracle.  And she was acknowledged and her child was healed.  She made history, even though we don’t know her name, because she had faith and the courage to speak up for her child.  
+				</p>
+			
+			</article>
+		
+		</div>
+		<!--End Main-Content-->
+		
+		<!--Start Sidebar-->
+		<div id="sidebar">
+		
+			<article>
+				
+				<h2>Yes, They’re Both Religious Examples</h2>
+				
+				<p>
+					These examples have been rattling around in my head for a while now.  I think it’s because the pastor at my church is biased.  It’s not because he’s being a jerk (deliberately), but I think he doesn’t really recognize it.  When he preaches on women in the bible or on female saints, he casts them as mild, soft, and unassuming.  I can’t imagine that anyone, male or female, would be remembered for this long if they weren’t strong or didn’t do things out of the norm.  After all, a young woman having a child out of wedlock, while she was engaged, at a time when at best she’d be cast to the streets or even worse, stoned, would be anything other than strong, courageous, and a force to be reckoned with, even without saying a word.
+				</p>
+				
+				<figure class="sidebar-figure">
+					<img src="https://i.imghippo.com/files/cXnq4334wVo.png" alt="Icon of Mary Hodegetria">
+					<figcaption>His mother said…“Do whatever he tells you.” --John 2:5</figcaption>
+				</figure>
+						
+			</article>
+			
+		</div>
+		<!--End Sidebar-->
+		
+		<footer>
+		
+			<p class="footer-subtitle">&#169; 2025 V. Wagener
+				<br>Images copyright of respective owners.
+			</p>
+		
+		</footer>
+	
+	</div>
+	<!--End Wrapper-->
+</body>
+
+</html>

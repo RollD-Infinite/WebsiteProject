@@ -1,0 +1,517 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+	
+	<title>Roll a D-Infinite</title>
+	
+		<style type="text/css">
+	
+		/*==CSS Reset==*/
+			/* http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)*/
+
+			a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, del, details, dd, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+
+			/* HTML5 display-role reset for older browsers */
+
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+				display: block;
+			}
+			body{
+				line-height: 1;
+			}
+			blockquote, q{
+				quotes: none;
+			}
+			blockquote:before, blockquote:after, q:before, q:after{
+				content: '';
+				content: none;
+			}
+			ol, ul{
+				list-style: none;
+			}
+			table{
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+		/*==End CSS Reset==*/
+
+			body{
+				background-image:url("https://i.imghippo.com/files/mh2065wGs.jpg");
+			}
+			
+			#wrapper{
+				width: 85%;
+				margin: 0 auto;
+			}
+			
+			header{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+						
+			.header-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: 3.5vw;
+				width: 40%;
+				float: right;
+				margin-top: 3%;
+			}
+			
+			header>figure>img{
+				width: 15%;
+				clear: left;
+			}
+			
+			h1{
+				font-family: "Pacifico", serif;
+				font-size: 8vw;
+				width: 80%;
+				float: right;
+			}
+			
+			nav{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+			
+			nav>ul{
+				font-size: 1.25em;
+				margin: 0 auto;
+				width: 90%;
+			}
+			
+			nav>ul>li{
+				font-family: "Caveat Brush", serif;
+				display: inline;
+				padding: .5% 5%;
+			}
+			
+			li.nav-item a:hover{
+				background-color: #E1BECE;
+			}
+			
+			#main-content{
+				width: 54%;
+				margin: 0 1% 1% 1%;
+				background-color: #E2F1CB;
+				float: left;
+				padding: 2%;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.main-figure>img{
+				width: 90%;
+			}
+			
+			.main-figure{
+				width: 90%;
+				margin: 0 auto;
+			}
+			
+			h2{
+				margin-bottom: 1%;
+				padding: 0 2% 2% 0;
+				font-family: "Caveat Brush", serif;
+				font-size: 1.5em;
+				color: #632D76;
+			}
+			
+			article{
+				padding: 3% 1%;
+			}
+			
+			p{
+				padding: 1% 0;
+				line-height: 1.25em;
+			}
+			
+			#sidebar{
+				width: 34%;
+				margin: 0 1% 1% 1%;
+				padding: 2%;
+				background-color: #E2F1CB;
+				float: left;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.sidebar-figure>img{
+				margin: 2% auto;
+				width: 95%;
+			}
+			
+			.sidebar-figure{
+				margin: 0 auto;
+			}
+			
+			figcaption{
+				margin: 2% auto;
+				font-family: "Caveat Brush", serif;
+			}
+			
+			footer{
+				clear: left;
+				padding: 2%;
+				margin: 1% auto;
+				background-color: #99BE60;
+				color: #632D76;
+			}
+			
+			.footer-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: larger;
+			}
+			
+			blockquote{
+				margin: 2% auto;
+				padding: 5% 7%;
+				font-family: "Caveat Brush", serif;
+				color: #953462;
+				background-color: #FFDCD7;
+				width: 85%;
+				font-size: 2vw;
+				line-height: 1.25em;
+			}
+			
+		</style>
+	
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body>
+	<!--Start Wrapper-->
+	<div id="wrapper">
+	
+		<header>
+		
+			<h1>Roll a D-Infinite</h1>
+			
+			<p class="header-subtitle">Many Faces, One Whole</p>
+			
+			<figure>
+				<img src="https://i.imghippo.com/files/evG5132wvY.png" alt="Kawaii Kitty with a D20">
+			</figure>
+							
+		</header>
+		
+		<nav>
+			
+			<ul>
+				<li class="nav-item"><a href="Page1-Crafting.html">Crafting</a></li>
+				<li class="nav-item"><a href="Page2-Adulting.html">Adulting</a></li>
+				<li class="nav-item"><a href="Page3-Women.html">Behaving</a></li>
+				<li class="nav-item"><a href="Page4-Recipes.html">Cooking</a></li>
+			</ul>
+			
+		</nav>
+		
+		<!--Start Main-Content-->
+		<div id="main-content">
+		
+			<article>
+			
+				<h2>Quotes Serious and Snark</h2>
+			
+				<p>
+					Un bon mot ne prouve rien.<br>A witty saying proves nothing.<br>--Unknown
+				</p>
+				
+				<p>
+					I think a nerd is a person who uses the telephone to talk to other people about telephones. And a computer nerd therefore is somebody who uses a computer in order to use a computer.<br>--Douglas Adams, Triumph of the Nerds: The Rise of Accidental Empires, TV program (1996)
+				</p>
+				
+				<p>
+					A learning experience is one of those things that say, "You know that thing you just did? Don't do that."<br>--Douglas Adams, The Salmon of Doubt (2002)
+				</p>
+				
+				<p>
+					Let us think the unthinkable, let us do the undoable, let us prepare to grapple with the ineffable itself, and see if we may not eff it after all.<br>--Douglas Adams, Dirk Gently's Holistic Detective Agency (1987)
+				</p>
+				
+				<p>
+					Time is an illusion. Lunchtime doubly so.<br>--Ford Prefect, Hitchhiker's Guide to the Galaxy (1979), Douglas Adams
+				</p>
+				
+				<hr>
+				
+				<figure class="main-figure">
+					<img src="https://i.imghippo.com/files/amt3362gCQ.png" alt="Movie Still from The Hitchhiker's Guide to the Galaxy">
+					<figcaption>Arthur Dent and Slartibartfast, The Hitchhiker's Guide to the Galaxy (2005)</figcaption>
+				</figure>
+				
+				<p>
+					I think that the chances of finding out what's actually going on are so absurdly remote that the only thing to do is to say, "Hang the sense of it," and keep yourself busy. I'd much rather be happy than right any day.<br>--Slartibartfast, Hitchhiker's Guide to the Galaxy (1979), Douglas Adams
+				</p>
+				
+				<hr>
+				
+				<p>
+					When science finally locates the center of the universe, some people will be surprised to learn they’re not it.<br>--Bernard Bailey
+				</p>
+				
+				<p>
+					Dissonance makes Tonic feel like home.<br>--Don Bates  
+				</p>
+				
+				<p>
+					My job is to inform, not to convince.<br>--St. Bernadette
+				</p>
+				
+				<p>
+					The problem with the world is that the intelligent people are full of doubts while the stupid ones are full of confidence.<br>--Charles Bukowski
+				</p>
+				
+				<p>
+					Behind every great man is a woman rolling her eyes.<br>--Jim Carrey
+				</p>
+				
+				<p>
+					Once you believe, the truth and a lie are quite the same thing.<br>--Cheshire Cat
+				</p>
+				
+				<p>
+					Tact is the ability to tell someone to go to hell in such a way that they look forward to the journey.<br>--Winston Churchill
+				</p>
+				
+				<p>
+					When a man gives his opinion, he’s a man.  When a woman gives her opinion, she’s a b****.<br>--Bette Davis
+				</p>
+				
+				<p>
+					Once you can accept the universe as matter expanding into nothing that is something, wearing stripes with plaid comes easy.<br>--Albert Einstein
+				</p>
+				
+				<blockquote>
+				
+					<figure class="main-figure">
+					<img src="https://i.imghippo.com/files/Zqdw1684suM.jpg" alt="Zuko and Iroh from 'Avatar: The Last Airbender'">
+					</figure>
+				
+					There is nothing wrong with a life of peace and prosperity.<br>--Iroh, Avatar: The Last Airbender, Season 2 Episode 14 "City of Walls and Secrets"
+
+				</blockquote>
+				
+				<p>
+					A legitimate conflict between science and religion cannot exist. Science without religion is lame, religion without science is blind.<br>--Albert Einstein
+				</p>
+				
+				<p>
+					Dr. Einstein,  aren’t these the same questions as last year’s physics final exam?<br>--Student
+					<br>Yes. But this year the answers are different<br>--Albert Einstein
+				</p>
+				
+				<p>
+					Though the sex to which I belong is considered weak, you will nevertheless find me a rock that bends to no wind.<br>--Queen Elizabeth I
+				</p>
+				
+				<p>
+					Before you marry a person, you should first make them use a computer with slow Internet to see who they really are.<br>--Will Ferrell
+				</p>
+				
+				<p>
+					I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.<br>--Bill Gates
+				</p>
+				
+				<p>
+					I’m not perfect all the time, just some of the time.<br>--Charlie Gorrill
+				</p>
+				
+				<p>
+					Never attribute to malice that which is adequately explained by stupidity.<br>--Robert J. Hanlon
+				</p>
+				
+				<p>
+					It is so beautifully ironic that St. Francis – the great lover of animals – is now a pigeon’s target in countless yards.<br>--Mark Hart
+				</p>
+				
+				<p>
+					There is no conflict between science and theology, except where there is bad science or bad theology.<br>--Father Theodore Hesburgh
+				</p>
+				
+				<p>
+					Puns are the highest form of literature.<br>--Alfred Hitchcock
+				</p>
+				
+				<p>
+					The only legitimate use of a computer is to play games.<br>--Eugene Jarvis
+				</p>
+				
+				<p>
+					It can be said, in fact, that research, by exploring the greatest and the smallest, contributes to the glory of God which is reflected in every part of the universe.<br>--St. John Paul II
+				</p>
+				
+				<p>
+					<blockquote>
+						Stupidity is also a gift of God, but one mustn't misuse it.<br>--St. John Paul II
+					</blockquote>
+				</p>
+				
+				<p>
+					Not a man.  Marsh-wiggle.  Not a frog either: Marsh-wiggle…Marsh-wiggle.  Marsh-wiggle.  Very respectable Marsh-wiggle.  Respectowiggle.<br>--Puddleglum, The Silver Chair (1953), C.S. Lewis
+				</p>
+				
+				<hr>
+				
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/LqbH7996xAE.png" alt="Eustice, Jill, and Puddleglum'">
+						<figcaption>Puddleglum's Home</figcaption>
+					</figure>
+
+				<p>
+				
+					Good morning Guests.  Though when I say good I don’t mean it won’t probably turn to rain or it might be snow, or fog, or thunder. You didn’t get any sleep, I daresay.<br>--Puddleglum, The Silver Chair (1953), C.S. Lewis
+					
+				</p>
+				
+				<hr>
+				
+				<p>
+					If you find it hard to laugh at yourself, I would be happy to do it for you.<br>--Groucho Marx
+				</p>
+				
+				<p>
+					Either work hard or you might as well quit<br>--MC Hammer
+				</p>
+				
+				<p>
+					An optimist thinks that this is the best possible world. A pessimist fears that this is true.<br>--Robert Oppenheimer
+				</p>
+				
+				<p>
+					Don’t worry about the world coming to an end today. It’s already tomorrow in Australia.<br>--Charles Schulz
+				</p>
+				
+				<p>
+					The difference between screwing around and science is writing it down.<br>--Adam Savage, Mythbusters
+				</p>
+				
+				<p>
+					To tell a woman who is forty, “you look like sixteen” is boloney.  The blarney way of saying it is “Tell me how old you are, I should like to know at what age women are the most beautiful.”<br>--Ven. Fulton Sheen
+				</p>
+				
+				<p>
+					When you are getting kicked from the rear it means you are in front.<br>--Ven. Fulton Sheen
+				</p>
+				
+				<p>
+					Just because I don’t care doesn’t mean I don’t understand.<br>--Homer Simpson
+				</p>
+				
+				<p>
+					<br>
+				</p>
+				
+				<hr>
+				
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/zXvQ4025vYk.png" alt="Ezra and Kanan">
+						<figcaption>Ezra Bridger and Kanan Jarrus</figcaption>
+					</figure>
+				
+				<p>
+					I just wanted you to have the best teacher.<br>--Kanan Jarrus
+					<br>Well, I don't want the best teacher! I want you.<br>--Ezra Bridger
+					<br>Star Wars: Rebels, Season 1 Episode 5 "Rise of the Old Masters"
+				</p>
+				
+				<hr>
+				
+				<p>
+					Drink to the point of hilarity and no further.<br>--St. Thomas Aquinas
+				</p>
+				
+				<p>
+					Always forgive your enemies; nothing annoys them so much.<br>--Oscar Wilde
+				</p>
+				
+				<p>
+					Some people care too much. I think it's called love.<br>--Winnie the Pooh
+				</p>
+				
+				<p>
+					My mother taught me to be polite to dragons. Particularly polite, I mean; she taught me to be ordinary polite to everyone...but dragons are a special case.<br>--Daystar, Talking to Dragons (1995), Patricia C. Wrede
+				</p>
+				
+				<p>
+					Light travels faster than sound. This is why some people appear bright until they speak.<br>--Steven Wright
+				</p>
+				
+				<p>
+					People often say that motivation doesn't last. Well, neither does bathing - that's why we recommend it daily.<br>--Zig Ziglar
+				</p>
+				
+				<p>
+					<blockquote>
+						Being upset is no excuse.  If you're going to be rude, do it for a reason and get something from it.<br>--Cimorene, Talking to Dragons (1995), Patricia C.Wrede
+					</blockquote>
+				
+			</article>
+		
+		</div>
+		<!--End Main-Content-->
+		
+		<!--Start Sidebar-->
+		<div id="sidebar">
+		
+			<article>
+				
+				<h2>Why I Chose These Quotes</h2>
+				
+				<p>
+					I collect quotes and snappy sayings.  Usually, I make them into cross stitch patterns.  There is something about using a traditional craft to make something modern.  Especially where there is a disconnect between the style, such as a “granny sampler” with all the cutesy little flowers and borders, and the saying.  The trend is called “subversive cross stitch” and has been a big thing for the last decade or so.  I’ve designed my own patterns and I’ve stitched patterns designed by other people.  They’re all very satisfying to work.  
+				</p>
+				
+				<p>
+					Even though I like the jarring feel of subversive stitching, I think the quote collection is more about having something unusual to say that makes me, or others, stop and think.  Even the most throw-away, mindless quote has something to say.  An observation about modern culture or a deep spiritual meaning or even just an excuse to laugh and say “that’s so true!”  
+				</p>
+				
+				<p>
+					Many of the quotes on the list here are from media I’ve been watching/reading/listening to lately.  Or they’re just classics.  If you are looking for one or two to dig deeper into, I’d suggest reading ‘The Silver Chair’ (1953) by C.S. Lewis or watching ‘Avatar: The Last Airbender’ (2005).  
+				</p>
+				
+				<p>
+					Puddleglum is the most cheerful downer, the most optimistic pessimist, and the deepest thinker in the book.  I avoided his most famous quote in this list, partly because I had enough philosophical quotes, but mostly because the “Respectowiggle” scene is my daughter’s favorite.  Iroh is the wise elder trope in ‘Avatar’.  He is goofy at times, but if you watch him, even in his humor there is wisdom to be found.  The sequel series, ‘The Legend of Korra’ shows even more of Iroh’s wit and wisdom.  
+				</p>
+				
+				<p>
+					Hopefully, something in this list will strike you enough to look deeper into the author.  Or make everyone around you wonder why you’re laughing too hard.  Either way I win.
+				</p>
+			
+			</article>
+			
+		</div>
+		<!--End Sidebar-->
+		
+		<footer>
+		
+			<p class="footer-subtitle">&#169; 2025 V. Wagener
+				<br>Images copyright of respective owners.
+			</p>
+		
+		</footer>
+	
+	</div>
+	<!--End Wrapper-->
+</body>
+
+</html>

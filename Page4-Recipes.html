@@ -1,0 +1,389 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+	
+	<title>Roll a D-Infinite</title>
+	
+		<style type="text/css">
+	
+		/*==CSS Reset==*/
+			/* http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)*/
+
+			a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, del, details, dd, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+
+			/* HTML5 display-role reset for older browsers */
+
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+				display: block;
+			}
+			body{
+				line-height: 1;
+			}
+			blockquote, q{
+				quotes: none;
+			}
+			blockquote:before, blockquote:after, q:before, q:after{
+				content: '';
+				content: none;
+			}
+			ol, ul{
+				list-style: none;
+			}
+			table{
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+		/*==End CSS Reset==*/
+
+			body{
+				background-image:url("https://i.imghippo.com/files/mh2065wGs.jpg");
+			}
+			
+			#wrapper{
+				width: 85%;
+				margin: 0 auto;
+			}
+			
+			header{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+						
+			.header-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: 3.5vw;
+				width: 40%;
+				float: right;
+				margin-top: 3%;
+			}
+			
+			header>figure>img{
+				width: 15%;
+				clear: left;
+			}
+			
+			h1{
+				font-family: "Pacifico", serif;
+				font-size: 8vw;
+				width: 80%;
+				float: right;
+			}
+			
+			nav{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+			
+			nav>ul{
+				font-size: 1.25em;
+				margin: 0 auto;
+				width: 90%;
+			}
+			
+			nav>ul>li{
+				font-family: "Caveat Brush", serif;
+				display: inline;
+				padding: .5% 5%;
+			}
+			
+			li.nav-item a:hover{
+				background-color: #E1BECE;
+			}
+			
+			#main-content{
+				width: 54%;
+				margin: 0 1% 1% 1%;
+				background-color: #E2F1CB;
+				float: left;
+				padding: 2%;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.ingredients{
+				list-style: disc;
+				padding: .5% 1.5%;
+				font-family:"Comic Neue", sans-serif;
+				line-height: 1.25em;
+			}
+			
+			.directions{
+				list-style: decimal;
+				padding: .5% 1.5%;
+				font-family:"Comic Neue", sans-serif;
+				line-height: 1.25em;
+			}
+			
+			.main-figure>img{
+				width: 80%;
+				margin: 0 auto;
+			}
+			
+			.main-figure{
+				width: 90%;
+				margin: 0 auto;
+			}
+			
+			h2{
+				margin-bottom: 1%;
+				padding: 0 2% 2% 0;
+				font-family: "Caveat Brush", serif;
+				font-size: 1.5em;
+				color: #632D76;
+			}
+			
+			h3{
+				padding: 0 2% 1% 0;
+				font-family: "Caveat Brush", serif;
+				color: #632D76;
+			}
+			
+			h4{
+				padding: 1%;
+				font-family: "Caveat Brush", serif;
+				color: #632D76;
+			}
+			
+			article{
+				padding: 3% 1%;
+			}
+			
+			p{
+				padding: 1% 0;
+				line-height: 1.25em;
+			}
+			
+			#sidebar{
+				width: 34%;
+				margin: 0 1% 1% 1%;
+				padding: 2%;
+				background-color: #E2F1CB;
+				float: left;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			figcaption{
+				margin: 2% auto;
+				font-family: "Caveat Brush", serif;
+			}
+			
+			footer{
+				clear: left;
+				padding: 2%;
+				margin: 1% auto;
+				background-color: #99BE60;
+				color: #632D76;
+			}
+			
+			.footer-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: larger;
+			}
+			
+		</style>
+	
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body>
+	<!--Start Wrapper-->
+	<div id="wrapper">
+	
+		<header>
+		
+			<h1>Roll a D-Infinite</h1>
+			
+			<p class="header-subtitle">Many Faces, One Whole</p>
+			
+			<figure>
+				<img src="https://i.imghippo.com/files/evG5132wvY.png" alt="Kawaii Kitty with a D20">
+			</figure>
+							
+		</header>
+		
+		<nav>
+			
+			<ul>
+				<li class="nav-item"><a href="Page1-Crafting.html">Crafting</a></li>
+				<li class="nav-item"><a href="Page2-Adulting.html">Adulting</a></li>
+				<li class="nav-item"><a href="Page3-Women.html">Behaving</a></li>
+				<li class="nav-item"><a href="Page5-Quotes.html">Quoting</a></li>
+			</ul>
+			
+		</nav>
+		
+		<!--Start Main-Content-->
+		<div id="main-content">
+		
+			<article>
+			
+				<h2>Playdough - from I Heart Naptime</h2>
+			
+				<figure class="main-figure">
+					<img src="https://i.imghippo.com/files/Rzu7012DY.jpg" alt="Balls of Colorful Playdough" />
+					<figcaption>DOH!</figcaption>
+				</figure>
+				
+				<p>
+					“I’m bored!”  “I want my tablet/phone/video games!”  “It’s too cold to go out and play!”  And the excuses go on and on and on.  Before too long, someone is going to break something – either a lamp or a parent’s patience.  Thanks to Mommie Blogs and well-stocked kitchens, there is a solution!  Homemade Playdough!
+				</p>
+				
+				<p>
+					The stuff in a can from the store is full of chemicals and smells like it.  Eww.  Luckly, the ingredients for DIY playdough are (mostly) kitchen staples and the method is easy enough to make as often as it is needed.  My personal favorite recipe is from Jamielyn Nye at <a href="https://www.iheartnaptime.net/play-dough-recipe/" target="_blank"; rel="noopener noreferrer">I Heart Naptime</a>.   It’s soft, stores well, is “taste-proof”, and you can divide the batch up and freeze what you aren’t using right away.  The playdough isn’t as soft when you defrost it but it’s ready overnight in the fridge when you need to replenish what you have on hand.
+				</p>
+				
+				<p>
+					The ingredients are simple: flour, water, salt, vegetable oil, food coloring.  The one ingredient what might be unfamiliar is cream of tartar.  Tartaric acid is a dry, powdery byproduct of fermenting grapes into wine.  It's used in cooking to stablize egg white foams, but in playdough it keeps the dough from getting sticky.  You can leave it out, but I don't recomend it.
+				</p>
+				
+				<p>
+					<h3>The BEST Homemade Playdough</h3>
+					
+					<h4>Ingredients</h4>
+					
+					<ul class="ingredients">
+						<li>2 cups All-Purpose Flour</li>
+						<li>3/4 cups Table Salt</li>
+						<li>4 teaspoons Cream of Tartar</li>
+						<li>2 cups Water</li>
+						<li>2 tablespoons Vegetable Oil</li>
+						<li>Your choice of Food Coloring</li>
+					</ul>
+				</p>
+				
+				<p>
+					<h4>Instructions</h4>
+					
+					<ol class="directions">
+						<li>Stir together the flour, salt and cream of tartar in a large pot.</li>
+						<li>Next add the water and oil. If you’re only making one color, stir in the color now.</li>
+						<li>Cook over medium-heat, stirring constantly. Continue stirring until the dough has thickened and begins to form into a ball.</li>
+						<li>Remove from heat and then place inside a bowl. Allow to cool slightly and then knead until smooth.</li>
+						<li>If you’re adding multiple colors, divide the dough into balls, one for each color, and then add the dough into separate quart sized bags. Start with about 5 drops of color and add more to brighten it as needed. Knead the dough, while inside the bag so it doesn’t stain your hands.</li>
+					</ol>
+					
+				</p>
+				
+				<p>
+					Store in zip-top bags for up to 3 months, either in the cupboard or the refridgerator.  Freeze for up to 6 months.  Defrost on the counter or in the refridgerator before playing. 
+				</p>
+			
+			</article>
+			
+			<article>
+			
+				<h2>Merry Cherry Bars – from My Mom</h2>
+			
+				<figure class="main-figure">
+					<img src="https://i.imghippo.com/files/NU1474IHM.jpg" alt="Plate of Merry Cherry Bars">
+					<figcaption>Best Christmas Cookies EVER</figcaption>
+				</figure>
+				
+				<p>
+					My stay-at-home mom majored in “domestic engineering” with a minor in journalism.  She wanted to write “Mr. Fix-it” and “Hints from Heloise” articles for newspapers and other print media.  She ended up staying at home with my brother and I while we were in school, but her crazy skills in cooking, sewing, cleaning, crafting, and writing never suffered for the change in plans.  As good as she is at EVERYTHING, it’s her baking that makes her a legend.  Her pie crusts are perfect.  Seriously. 
+				</p>
+				
+				<p>
+					Growing up, my mom would start her Christmas baking in October.  Cookies that would freeze well were first – Star of Bethlehem (Peanut Butter Blossoms to everyone else), Russian Wedding Cakes, Pecan Sandies, and Merry Cherry Bars.  As we grew up, the list of cookies went from 10+ types to one or two.  This is the only recipe she makes every year without fail.  
+				</p>
+				
+				<p>
+					Having perfected these cookies over 40+ years, I added her notes on ingredients and techniques to help you be successful.  Even if they’re not as amazing as my mom’s, they’ll still be a hit!
+				</p>
+				
+				<p>
+					<h3>Merry Cherry Bars</h3>
+					
+					<h4>Ingredients</h4>
+					
+					<ul class="ingredients">
+						<li>1 cup butter, softened</li>
+						<li>1 cup granulated sugar</li>
+						<li>1 egg</li>
+						<li>1 tsp almond extract</li>
+						<li>1 – 10 oz jar Maraschino cherries</li>
+						<li>2 cups all-purpose flour</li>
+						<li>1/4 tsp salt</li>
+						<li>1 – 12 oz bag Holiday M&#38Ms</li>
+						<li>1 cup powdered sugar</li>
+						<li>5 tsp warm water</li>
+					</ul>
+				</p>
+				
+				<p>
+					<h4>Instructions</h4>
+					
+					<ol class="directions">
+						<li>Preheat oven to 300°, rack in the center of the oven.  Prep a small-to-medium sheet pan with cooking spray.  Baking parchment just makes a mess while spreading the bars in the pan – do yourself a favor and use cooking spray.  </li>
+						<li>Drain and chop cherries.  DO NOT USE A FOOD PROCESSOR.  No matter how carefully you chop them, the cherries will end up as paste!  The best technique I have found over the years is to cut each cherry in half, then each half into 2-4 pieces.  Enjoy the drained juice in a drink while you bake.  (I recommend lemon-lime soda over ice.  Vodka optional.)</li>
+						<li>Cream the butter and sugar together by hand until lightened.  Add the egg and almond extract and stir until well blended.</li>
+						<li>Stir in flour and salt.  Once a sticky dough has formed, fold in chopped cherries and mix well. </li>
+						<li>Spread dough in a prepped pan.  After making these for a combined total of 5 decades, my mom and I have figured out that the best way to spread the dough is with your hands.  We use cold tap water – just leave it running and stick your hands under the faucet when things get sticky.  You can use oil or butter on your hands, but a spatula and/or cooking spray will make a bigger mess than anything else.  </li>
+						<li>Sprinkle M&#38Ms evenly over bars in a single layer and press in lightly.  Bake for 30-35 minutes until edges are VERY lightly browned.  Cool completely in the pan.  </li>
+						<li>Make the Glaze – CANNOT BE MADE AHEAD:  Combine the powdered sugar and warm water in a small bowl or cup.  It will take a minute or two of whisking to get the powdered sugar wet, but don’t add more liquid.  If the glaze is too thick to drizzle, microwave for 2-3 seconds at a time until loosened.  Drizzle bars with glaze and let the glaze set up.  If you didn’t add too much liquid, it will be set in 1-2 hours.  Cut into bars and enjoy the applause when you serve them!</li>
+					</ol>
+					
+				</p>
+			
+			</article>
+		
+		</div>
+		<!--End Main-Content-->
+		
+		<!--Start Sidebar-->
+		<div id="sidebar">
+		
+			<article>
+				
+				<h2>Why These Recipes?</h2>
+				
+				<p>
+					I chose two of my top recipes.  The ones that I keep in a “brag book” photo album in my kitchen.  They are very different – the playdough recipe is easily 30 years newer than the cookie recipe, the cooking techniques are different, the end results are for VERY different purposes.  I wanted to share things that were important to me as I was growing up.  I remember my mom making playdough for my brother and I over the summers.  (Hers had kool-aid for color and scent. My daughter didn’t like that as much, so I don’t keep the recipe on hand.)  I remember bringing plates of cookies to my teachers, to family dinners, and just having them at home.
+				</p>
+				
+				<p>
+					I hope that these recipes will bring back memories of your own family traditions or help you start new ones for yourself.  
+				</p>
+				
+				<p>
+					PS: One last playdough recipe that’s saved my butt a few times: 2 parts flour, 1 part salt, 1 part water.  Mix, then knead until smooth.  Can be air- or oven-dried and painted.  Doesn’t keep, so make only what you need at one sitting.  
+				</p>
+			
+			</article>
+			
+		</div>
+		<!--End Sidebar-->
+		
+		<footer>
+		
+			<p class="footer-subtitle">&#169; 2025 V. Wagener
+				<br>Images and recipes copyright of respective owners.
+			</p>
+		
+		</footer>
+	
+	</div>
+	<!--End Wrapper-->
+</body>
+
+</html>

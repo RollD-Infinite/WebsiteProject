@@ -1,0 +1,405 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+	
+	<title>Roll a D-Infinite</title>
+	
+		<style type="text/css">
+	
+		/*==CSS Reset==*/
+			/* http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)*/
+
+			a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, del, details, dd, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+
+			/* HTML5 display-role reset for older browsers */
+
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+				display: block;
+			}
+			body{
+				line-height: 1;
+			}
+			blockquote, q{
+				quotes: none;
+			}
+			blockquote:before, blockquote:after, q:before, q:after{
+				content: '';
+				content: none;
+			}
+			ol, ul{
+				list-style: none;
+			}
+			table{
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+		/*==End CSS Reset==*/
+
+			body{
+				background-image:url("https://i.imghippo.com/files/mh2065wGs.jpg");
+			}
+			
+			#wrapper{
+				width: 85%;
+				margin: 0 auto;
+			}
+			
+			header{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+						
+			.header-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: 3.5vw;
+				width: 40%;
+				float: right;
+				margin-top: 3%;
+			}
+			
+			header>figure>img{
+				width: 15%;
+				clear: left;
+			}
+			
+			h1{
+				font-family: "Pacifico", serif;
+				font-size: 8vw;
+				width: 80%;
+				float: right;
+			}
+			
+			nav{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+			
+			nav>ul{
+				font-size: 1.25em;
+				margin: 0 auto;
+				width: 90%;
+			}
+			
+			nav>ul>li{
+				font-family: "Caveat Brush", serif;
+				display: inline;
+				padding: .5% 5%;
+			}
+			
+			li.nav-item a:hover{
+				background-color: #E1BECE;
+			}
+			
+			#main-content{
+				width: 54%;
+				margin: 0 1% 1% 1%;
+				background-color: #E2F1CB;
+				float: left;
+				padding: 2%;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.main-figure>img{
+				width: 55%;
+			}
+			
+			.main-figure{
+				width: 90%;
+				margin: 0 auto;
+			}
+			
+			h2{
+				margin-bottom: 1%;
+				padding: 0 2% 2% 0;
+				font-family: "Caveat Brush", serif;
+				font-size: 1.5em;
+				color: #632D76;
+			}
+			
+			article{
+				padding: 3% 1%;
+				margin-bottom: 2%;
+			}
+			
+			p{
+				padding: 1% 0;
+				line-height: 1.25em;
+			}
+			
+			#sidebar{
+				width: 34%;
+				margin: 0 1% 1% 1%;
+				padding: 2%;
+				background-color: #E2F1CB;
+				float: left;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.sidebar-figure>img{
+				margin: 2% auto;
+				width: 95%;
+			}
+			
+			.sidebar-figure{
+				margin: 0 auto;
+			}
+			
+			figcaption{
+				margin: 2% auto;
+				font-family: "Caveat Brush", serif;
+			}
+			
+			footer{
+				clear: left;
+				padding: 2%;
+				margin: 1% auto;
+				background-color: #99BE60;
+				color: #632D76;
+			}
+			
+			.footer-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: larger;
+			}
+			
+			blockquote{
+				margin: 2% auto;
+				padding: 5% 7%;
+				font-family: "Caveat Brush", serif;
+				color: #953462;
+				background-color: #FFDCD7;
+				width: 85%;
+				font-size: 2vw;
+				line-height: 1.25em;
+			}
+			
+		</style>
+	
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body>
+	<!--Start Wrapper-->
+	<div id="wrapper">
+	
+		<header>
+		
+			<h1>Roll a D-Infinite</h1>
+			
+			<p class="header-subtitle">Many Faces, One Whole</p>
+			
+			<figure>
+				<img src="https://i.imghippo.com/files/evG5132wvY.png" alt="Kawaii Kitty with a D20">
+			</figure>
+							
+		</header>
+		
+		<nav>
+			
+			<ul>
+				<li class="nav-item"><a href="Page2-Adulting.html">Adulting</a></li>
+				<li class="nav-item"><a href="Page3-Women.html">Behaving</a></li>
+				<li class="nav-item"><a href="Page4-Recipes.html">Cooking</a></li>
+				<li class="nav-item"><a href="Page5-Quotes.html">Quoting</a></li>
+			</ul>
+			
+		</nav>
+		
+		<!--Start Main-Content-->
+		<div id="main-content">
+		
+			<article>
+			
+				<h2>Evolution of a Widget</h2>
+				
+					<p>
+						What happens when you have a Widget and the Curse of the Multi-Crafter?  You get “weaponized” ADHD thinking.
+					</p>
+					
+					<p>
+						Let’s say you are making a widget.  It takes 1 sheet of white office paper 8 inches square.  Normal people make widgets per the directions.  The ADHD brain starts asking questions.  “What if the paper is 8.5 inches, since that’s the size office paper already comes in?  Can the widget be made from rectangular paper instead of square?  How about different colors?  Or different types of paper?  What changes if I use 12-inch squares, like scrapbooking paper, instead?  Can I decorate the paper?  Does it need to be decorated before or after it’s made?  What kind of decorations can I use?  How does the decoration change the assembly?...”
+					</p>
+					
+					<p>
+						Then, the Curse of the Multi-Crafter sets in.  “What other things make squares?  Can I make widgets with fabric?  Vinyl?  Knitting?  Crochet?  Foil?  Plastic?  Wood?  Chainmail?  Resin?  How will those materials change the construction and the final widget?  Can I decorate the squares if I use other materials?  What other tools can I use, or do I need, to make widgets out of these other materials?  Can I use this widget as an excuse to learn yet another craft?”  
+					</p>
+					
+					<p>
+						The catch to all these questions is that you need to know the properties of the materials you are working with.  That’s where the ADHD comes in.  Knowing that paper has a directional grain and different papers respond differently to decoration.  Understanding how paints, markers, glitter, or cutting designs into paper will change the qualities of your materials.  Fabric comes in even more varieties than paper, all with their own properties.  While knitting and crochet both take 1-dimensional yarn (a line) and turn it into a 2-dimensional shape (a plane), the techniques are different and the results of those techniques give even the same yarn very different results.  
+					</p>
+					
+					<p>
+						So, what does all this have to do with anything?  When you need a new inspiration, ask around.  Everyone has skills in different combinations.  Even if I have the same skill with paper as someone else, they might not have a skill for fabric.  Maybe they have a skill for blacksmithing, or math, or legos instead.  That unique combination of skills will bring a whole new perspective to a simple, 1 sheet of 8 inch square paper that makes a widget.  
+					</p>
+				
+			</article>
+			
+			<article>
+			
+				<h2>Brag Book</h2>
+				
+					<p>
+						If I were pushed to say so, I’d probably consider myself a knitter first and foremost.  Having said that, most of the things in my “brag book” here are actually made with my Cricut Maker 3.  It’s a fancy digital cutting machine that can be used for almost anything you can fit under the blades.  Mostly, it’s used for paper and vinyl.  
+					</p>
+					
+					<hr>
+					
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/wAcL7209SL.jpg" alt="Wood Sign with Vinyl Decals">
+						<figcaption>Design from Cricut DesignSpace</figcaption>
+					</figure>
+					
+					<p>
+						Jennifer’s Sign – My friend has been having issues with her mother.  Mostly involving her mother shaming her about the way she keeps house and raises her kids.  Jennifer is doing just fine and her mother needs to shove off.  I made this sign with iron-on vinyl on an unfinished wood plank and Jennifer cackled when she opened the package.  (For the win!)
+					</p>
+					
+					<hr>
+					
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/Vo7202Uo.jpg" alt="Valentine's Themed Shirt">
+						<figcaption>Design by V. Wagener</figcaption>
+					</figure>
+					
+					<p>
+						Valentine’s Day Shirt – My 8 year old daughter’s school has out-of-uniform days on occasion, usually around holidays.  You can wear something that matches the theme or your regular uniform those days.  I found this quote from St. Therese of Lisieux and designed the layout myself.  She got compliments all day!
+					</p>
+					
+					<hr>
+					
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/JR4513DOg.jpg" alt="Star Wars Themed Tote Bag">
+						<figcaption>Design from Cricut DesignSpace</figcaption>
+						
+						<img src="https://i.imghippo.com/files/pxl1142WSg.jpg" alt="Star Wars Themed Tote Bag">
+						<figcaption>Design by <a href="https://www.etsy.com/listing/1539883371/hera-syndulla-svg-png-jpg-rebels-dxf-eps?ref=items-pagination-1&logging_key=21261e31e408d37557ad08f9201a49ea5872cadc%3A1539883371">GrassyGiraffeStudios</a> on Etsy</figcaption>
+					</figure>
+					
+					<p>
+						Star Wars Shirt and Bag – At my house, we are Star Wars fans.  With the Ahsoka series on Disney+ continuing the story from Star Wars: Rebels, I had to make myself something with my favorite characters.  The aurebesh on the bag says “Once a rebel, Always a rebel.”  
+					</p>
+					
+					<hr>
+					
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/dXqq7744rc.jpg" alt="Star Wars Themed Shirt">
+						<figcaption>Design by V. Wagener</figcaption>
+					</figure>
+					
+					<p>
+						My husband is a big fan of Star Wars video games.  When we were in jr. high and high school, we both played “TIE Fighter”, a flight sim based in the Star Wars universe.  The logo on the shirt I made for him is the logo for the company that made X-Wing starfighters.  The aurebesh around the logo says “Incom Corporation – Fresia, Torranix Sector”.  
+					</p>
+					
+					<hr>
+					
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/scq5195kG.jpg" alt="Framed Cross Stitch Sampler">
+						<figcaption>Pattern by <a href="https://www.etsy.com/listing/1467788288/i-used-to-be-cool-cross-stitch-pattern?ref=items-pagination-1&pro=1&sts=1&logging_key=f28642ec130482bccccf74339d84f1c2cbbe854a%3A1467788288">CrossStitchTraveler</a> on Etsy</figcaption>
+					</figure>
+					
+					<p>
+						Cross Stitch Sampler – Another project I gifted to Jennifer.  She and her husband have 4 kids already and are expecting number 5 late this summer.  I saw this pattern on Etsy and knew that she would appreciate it.  I framed it myself, which was an adventure.  Fabric is thicker than you think when you’re trying to fit it into a frame.
+					</p>
+					
+					<hr>
+					
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/RjV3537Mw.jpg" alt="Pokemon Amigurumi">
+						<figcaption>I forgot who designed this pattern...oops!</figcaption>
+					</figure>
+					
+					<p>
+						Ditto Amigurumi – For those of you who are not old enough to remember Generation 1 Pokemon (…yeah, about that…), this is a Ditto.  It takes on the shape and attacks of which ever pokemon it’s battling.  It is infinitely flexible, able to adapt to nearly anything, and has the greatest derpy face.  I crocheted this one and had it in my cubicle at my last job.  A reminder to be flexible and adapt.  My husband has a larger version on his work desk, right next to his Lego BD-1 with fancy lighting kit.  
+					</p>
+					
+					<hr>
+					
+					<figure class="main-figure">
+						<img src="https://i.imghippo.com/files/Crm5037pqs.jpg" alt="St. Therese Sacrifice Beads">
+						<figcaption>Pattern from <a href="https://thelittleways.com/how-to-make-sacrifice-beads">The Little Ways</a></figcaption>
+						
+						<img src="https://i.imghippo.com/files/oVL1954ek.jpg" alt="Sacrifice Bead Kit">
+						<figcaption>Kit with printed directions</figcaption>
+					</figure>
+					
+					<p>
+						Sacrifice Beads – My daughter’s birthday is New Year’s Eve.  Not a great time to hold a party for all her friends.  So instead, we have a party for her Name Day.  A name day is the feast day of the saint you are named for.  The feast of St. Sophia is May 15th, the perfect time to have a party for a bunch of elementary school kids.  Instead of putting a bunch of cheap plastic stuff in a goodie bag, I put together a craft of some sort for the kids to take home.  Last year, we made kits for sacrifice beads.  Perfect.
+					</p>
+					
+			</article>
+			
+		
+		</div>
+		<!--End Main-Content-->
+		
+		<!--Start Sidebar-->
+		<div id="sidebar">
+		
+			<article>
+				
+				<h2>The Fairy Godmothers of Knitting</h2>
+				
+				<figure class="sidebar-figure">
+					<img src="https://i.imghippo.com/files/znc1261DM.png" alt="Godmothers of Knitting">
+					<figcaption>L to R: Mary Walker Phillips, Elizabeth Zimmermann, Barbara G. Walker</figcaption>
+				</figure>
+				
+				<p>
+					There are 3 ladies in the last century who have recreated knitting as we know it:  Elizabeth Zimmermann (1910-1999), Barbara G. Walker (1930-), and Mary Walker Phillips (1923-2007).  These ladies have taken something as simple as a string and a stick and turned it into an intellectual, physical, mental, and artistic pursuit.
+				</p>
+				
+				<p>
+					Mary Walker Philips developed hand knitting from a craft to an independent art form.  Her work is in the permanent collections at the Smithsonian Institute, Washington DC, the Art Institute of Chicago, the Museum of Modern Art, New York City, and the Royal Scottish Museum, Edinburgh, Scotland.  Her last book, "Knitting Counterpanes, Traditional Coverlet Patterns for Contemporary Knitters" (1989), was the result of a fellowship grant from the National Endowment for the Arts, as well as one of my personal favorites.
+				</p>
+				
+				<p>
+					Barbara G. Walker has compiled one of the largest collections of knitting stitch patterns, published in 4 volumes.  These books should be on the shelf of every knitter.  Her understanding of the relationship between individual stitches and how they affect the whole of the design is incredible.  In addition to her 4 volume masterwork of stitch patterns, she has published several instructional books on knitting subgenres.  Lace, cables, mosaics, and her very accessible "Barbara Walker’s Learn-to-Knit Afghan Book" (1974, reprint 1997) are essential to beginning knitters and experienced knitters looking for a review or for new skills.
+				</p>
+				
+				<p>
+					Elizabeth Zimmermann is the pinnacle of knitting instructors.  Her books are all classics, her techniques are still taught, and her concept of “un-venting” is still quoted and explored to this day.  The “Pi Shawl”, “Baby Surprise Jacket”, “I-Cord”, and “EPS” (Elizabeth’s Percentage System) are all still knitted and explored to this day.  Elizabeth’s books are full of wit and wisdom, as well as knitting directions.  She rarely published patterns.  Instead, her books are full of concepts and techniques to move the knitter beyond blindly following a pattern into an independent thinker.  "The Knitter’s Almanac" (1974) is worth reading even if you don’t knit – her commentary and insight are incredible.
+				</p>
+				
+				<blockquote>
+					One un-vents something; one unearths it; one digs it up; one runs it down in whatever recesses of the eternal consciousness it has gone to ground.
+					<br>--Elizabeth Zimmermann, The Knitter's Almanac (1981)
+				</blockquote>
+			
+			</article>
+			
+		</div>
+		<!--End Sidebar-->
+		
+		<footer>
+		
+			<p class="footer-subtitle">&#169; 2025 V. Wagener
+				<br>Images, designs, and patterns copyright of respective owners.
+			</p>
+		
+		</footer>
+	
+	</div>
+	<!--End Wrapper-->
+</body>
+
+</html>

@@ -1,0 +1,555 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+JP:wght@100..900&family=Pacifico&display=swap" rel="stylesheet">
+	
+	<title>Roll a D-Infinite</title>
+	
+		<style type="text/css">
+	
+		/*==CSS Reset==*/
+			/* http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)*/
+
+			a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, del, details, dd, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+
+			/* HTML5 display-role reset for older browsers */
+
+			article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{
+				display: block;
+			}
+			body{
+				line-height: 1;
+			}
+			blockquote, q{
+				quotes: none;
+			}
+			blockquote:before, blockquote:after, q:before, q:after{
+				content: '';
+				content: none;
+			}
+			ol, ul{
+				list-style: none;
+			}
+			table{
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+		/*==End CSS Reset==*/
+
+			body{
+				background-image:url("https://i.imghippo.com/files/mh2065wGs.jpg");
+			}
+			
+			#wrapper{
+				width: 85%;
+				margin: 0 auto;
+			}
+			
+			header{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+						
+			.header-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: 3.5vw;
+				width: 40%;
+				float: right;
+				margin-top: 3%;
+			}
+			
+			header>figure>img{
+				width: 15%;
+				clear: left;
+			}
+			
+			h1{
+				font-family: "Pacifico", serif;
+				font-size: 8vw;
+				width: 80%;
+				float: right;
+			}
+			
+			nav{
+				background-color: #99BE60;
+				padding: 2%;
+				margin-bottom: 1%;
+			}
+			
+			nav>ul{
+				font-size: 1.25em;
+				margin: 0 auto;
+				width: 90%;
+			}
+			
+			nav>ul>li{
+				font-family: "Caveat Brush", serif;
+				display: inline;
+				padding: .5% 5%;
+			}
+			
+			li.nav-item a:hover{
+				background-color: #E1BECE;
+			}
+			
+			#main-content{
+				width: 54%;
+				margin: 0 1% 1% 1%;
+				background-color: #E2F1CB;
+				float: left;
+				padding: 2%;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.main-figure>img{
+				width: 55%;
+			}
+			
+			.main-figure{
+				width: 90%;
+				margin: 0 auto;
+			}
+			
+			h2{
+				margin-bottom: 1%;
+				padding: 0 2% 2% 0;
+				font-family: "Caveat Brush", serif;
+				font-size: 1.5em;
+				color: #632D76;
+			}
+			
+			h3{
+				padding: 0 2% 1% 0;
+				font-family: "Caveat Brush", serif;
+				color: #632D76;
+			}
+			
+			article{
+				padding: 3% 1%;
+				margin-bottom: 2%;
+			}
+			
+			p{
+				padding: 1% 0;
+				line-height: 1.25em;
+			}
+			
+			.outerlist{
+				list-style: disc;
+				padding: 2%;
+				font-family:"Caveat Brush", serif;
+			}
+			
+			.innerlist{
+				list-style: none;
+				padding: 2% 0;
+				font-family: "Comic Neue", sans-serif;
+			}
+			table{
+				width: 95%;
+				margin: 0 auto;
+				background-color: #FFDCD7;
+			}
+			
+			table, thead, caption, th{
+				border: 2px solid #B24C3F;
+				font-family: "Caveat Brush", serif;
+				background-color: #FFDCD7;
+			}
+			
+			td{
+				font-family: "Comic Neue", sans-serif;
+				border: 2px solid #B24C3F;
+				color: black;
+			}
+			
+			#sidebar{
+				width: 34%;
+				margin: 0 1% 1% 1%;
+				padding: 2%;
+				background-color: #E2F1CB;
+				float: left;
+				font-family: "Comic Neue", sans-serif;
+				color: #953462;
+			}
+			
+			.sidebar-figure>img{
+				margin: 2% auto;
+				width: 50%;
+			}
+			
+			.sidebar-figure{
+				margin: 0 auto;
+			}
+			
+			figcaption{
+				margin: 2% auto;
+				font-family: "Caveat Brush", serif;
+			}
+			
+			footer{
+				clear: left;
+				padding: 2%;
+				margin: 1% auto;
+				background-color: #99BE60;
+				color: #632D76;
+			}
+			
+			.footer-subtitle{
+				font-family: "Caveat Brush", serif;
+				font-size: larger;
+			}
+			
+			.sidebar-quote{
+				margin: 2% auto;
+				font-family: "Caveat Brush", serif;
+				color: #953462;
+				width: 85%;
+				line-height: 1.25em;
+			}
+			
+		</style>
+	
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5.js"></script>
+	<![endif]-->
+
+
+</head>
+
+<body>
+	<!--Start Wrapper-->
+	<div id="wrapper">
+	
+		<header>
+		
+			<h1>Roll a D-Infinite</h1>
+			
+			<p class="header-subtitle">Many Faces, One Whole</p>
+			
+			<figure>
+				<img src="https://i.imghippo.com/files/evG5132wvY.png" alt="Kawaii Kitty with a D20">
+			</figure>
+							
+		</header>
+		
+		<nav>
+			
+			<ul>
+				<li class="nav-item"><a href="Page1-Crafting.html">Crafting</a></li>
+				<li class="nav-item"><a href="Page3-Women.html">Behaving</a></li>
+				<li class="nav-item"><a href="Page4-Recipes.html">Cooking</a></li>
+				<li class="nav-item"><a href="Page5-Quotes.html">Quoting</a></li>
+			</ul>
+			
+		</nav>
+		
+		<!--Start Main-Content-->
+		<div id="main-content">
+		
+			<article>
+			
+				<h2>The Sacrament of Potty Training</h2>
+				
+				<p>
+					Potty training is an ordeal. Using a toilet is something we don’t even think about as adults, but when we are first born, we don’t have the muscle control or understanding of our body’s cues to let us know when it is time to go to the bathroom. At some point in the first 2-3 years of our lives, someone had to teach us when and how to go potty.
+				</p>
+				
+				<p>
+					I’d spent the last few days scrubbing and trying to keep a 2-year-old distracted but still within reach of the bathroom. Not easy or fun. I was cleaning up yet another mess while begging help from the Blessed Virgin by every aspect I could think of (and a few I probably made up on the spot) when a sudden calm came over me. I heard in my heart “You have the sacramental graces necessary to raise your daughter. Do not worry.”
+				</p>
+				
+				<p>
+					Why is Marriage a sacrament? It is the only sacrament that is conferred on you not by an ordained minister, but by your spouse and yourself. If a sacrament leaves an indelible mark on your soul, what is gained by a sacramental marriage rather than a civil union? The graces of sacramental marriage give you the strength and commission to get your spouse to heaven, to create a “Domestic Church” (Catechism of the Catholic Church, Articles 1656-1657), and to raise children in faithfulness and love. It is a calling that partners you with someone headed in the same direction and will be your helpmate (Genesis 2:8) in this life and the next.
+				</p>
+				
+				<p>
+					As I finished scrubbing, I hear the surprisingly distinct sound of a box-worth of Cheerios hitting the kitchen floor. I take off my cleaning gloves, grab a broom, and think “I got this!”
+				</p>
+			
+			</article>
+			
+			<article>
+			
+				<h2>Meal Planning for the Busy</h2>
+			
+				<p>
+					No matter how ambitious I feel at 10AM, by 4PM I’m ready to be done.  Dinner gets put aside in favor of DoorDash or instant-whatever from the cupboard.  But a little planning means that dinner can come together easily each night.  It’s amazing how many common ingredients are in multiple meals.  
+				</p>
+				
+				<p>
+					What is in fajitas?  Tortilla shells, chicken, bell peppers, onions, cheese and other fixings.  How about Italian sausage hoagies?  Sausages, bell peppers, onions, cheese, hoagie rolls.  Pizza?  Crust, sauce, cheese, toppings.  With a bit of planning, 5 meals can come together quickly with common ingredients. 
+				</p>
+				
+				<p>
+					<h3>5 Days of Meals</h3>
+			
+						<ul class="outerlist">
+							<li>Monday - Chicken Fajitas
+								<ul class="innerlist">
+									<li>Soft Tortilla Shells</li>
+									<li>Sliced Chicken</li>
+									<li>Sliced Peppers and Onions</li>
+									<li>Shredded Cheese</li>
+									<li>Salsa</li>
+									<li>Diced Tomatoes, Sour Cream, Guac, other "fixings"</li>
+								</ul>
+							</li>
+							<li>Tuesday - Italian Sausage Hoagies</li>
+								<ul class="innerlist">
+									<li>Split Hoagie Rolls</li>
+									<li>Italian Sausage Links</li>
+									<li>Sliced Peppers and Onions</li>
+									<li>Sliced Cheese</li>
+								</ul>
+							<li>Wednesday - Pasta and Tomato Sauce</li>
+								<ul class="innerlist">
+									<li>Pasta</li>
+									<li>Jarred Pasta Sauce</li>
+									<li>Sliced Italian Sausage</li>
+									<li>Mushrooms, Olives, etc</li>
+								</ul>
+							<li>Thursday - "Midnight Breakfast" (Scrambled Egg Skillet)</li>
+								<ul class="innerlist">
+									<li>Eggs</li>
+									<li>Frozen Hashbrowns</li>
+									<li>Diced Ham, Sausage, and/or Chicken</li>
+									<li>Shredded Cheese</li>
+									<li>Diced Tomatoes, Peppers, Onions, Mushrooms</li>
+									<li>Toast</li>
+									<li>Salsa or other condiments</li>
+								</ul>
+							<li>Friday - Pizza Party</li>
+								<ul class="innerlist">
+									<li>Crust - Tortillas, Toasted Hoagie Rolls or Bread, Store-bought, or Homemade</li>
+									<li>Pasta Sauce or Salsa</li>
+									<li>Shredded Cheese</li>
+									<li>Toppings - Chicken, Peppers, Onions, Sausage, Ham, Tomatoes, Mushrooms, anything else in the fridge</li>
+								</ul>
+						</ul>
+				
+				</p>
+				
+					<table>
+					
+						<caption><h3>Common Ingredients in 5 Meals</h3></caption>
+						
+						<thead>
+						
+							<th rowspan="2">Ingredients</th>
+							<th colspan="5">Meals</th>
+							
+							<tr>
+								<th>Chicken Fajitas</th>
+								<th>Italian Sausage Hoagies</th>
+								<th>Pasta and Tomato Sauce</th>
+								<th>"Midnight Breakfast"</th>
+								<th>Friday - Pizza Party</th>
+							</tr>
+						
+						</thead>
+						
+						<tbody>
+						
+							<tr>
+								<td>Bell Peppers</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Cheese</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Chicken</td>
+								<td>Yes</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Eggs</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Ham</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Hashbrowns</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Hoagie Rolls</td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td></td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Italian Sausage</td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Mushrooms</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Onions</td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Pasta</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>Salsa</td>
+								<td>Yes</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Toast</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Tomato Sauce</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td></td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Tomatoes</td>
+								<td>Yes</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							<tr>
+								<td>Tortilla Shells</td>
+								<td>Yes</td>
+								<td></td>
+								<td></td>
+								<td>Yes</td>
+								<td>Yes</td>
+							</tr>
+							
+						</tbody>
+					
+					</table>
+				
+				<p>
+					There are only 3 ingredients on that list that are used in only 1 meal:  Pasta, Eggs, and Hashbrowns.  Leftover pasta reheats for lunch well and can have any number of sauces and toppings – butter and garlic, leftover cooked vegetables, leftover meat, made into a pasta salad with raw vegetables and salad dressing.  Eggs and hashbrowns can be made into breakfast burritos with tortilla shells, or cooked with or without cooked leftovers as a microwave egg mug.  
+				</p>
+				
+				<p>
+					The great thing about planning meals this way is that you can chop, cut, and slice what you need for the week all at one time.  Cutting peppers and onions for multiple meals then putting them in a container in the fridge means that you can just dose out what you need each time.  Things like tortilla shells can be made into wrappers for leftovers, filled with sandwich fixings, rolled and sliced as pinwheel sandwiches.  Anything flat and/or bread-ish can be made into pizza.  Toast, crescent roll dough, tortilla shells, even chicken breast sliced flat.
+				</p>
+				
+				<p>
+					The best way to start planning these sorts of grouped meals for yourself is to make a list of the various meals you already know how to make.  Under each meal, add a list of the general ingredients.  Start looking for patterns in the ingredients and make meal plans based on common ingredients, grocery sales, and evening activities.  And don’t forget to treat yourself to dinner out once in a while.  Sometimes, it’s nice to relax with family and friends and let someone else do the dishes.
+				</p>
+			
+			</article>
+		
+		</div>
+		<!--End Main-Content-->
+		
+		<!--Start Sidebar-->
+		<div id="sidebar">
+		
+			<article>
+				
+				<h2>Why Should You Listen to My Advice?</h2>
+				
+				<figure class="sidebar-figure">
+					<img src="https://i.imghippo.com/files/cOKs8263afE.png" alt="Anime-Style Profile Pic">
+					<figcaption>If I were an anime character...</figcaption>
+				</figure>
+				
+				<p>
+					Good question.  I’ve been living for 40-ish years and have had lots of different experiences.  I have a perspective that is different than anyone else, simply because I’m a different person.  I really really want to help people learn from my mistakes instead of making those mistakes themselves.  Most of all, I can offer the advice I give expecting parents:
+				</p>
+				
+				<p class="sidebar-quote">
+					You are going to get a lot of unsolicited advice.  Smile, nod, and do what’s right for you and your family.  
+				</p>
+			
+			</article>
+			
+		</div>
+		<!--End Sidebar-->
+		
+		<footer>
+		
+			<p class="footer-subtitle">&#169; 2025 V. Wagener
+				<br>Images copyright of respective owners.
+			</p>
+		
+		</footer>
+	
+	</div>
+	<!--End Wrapper-->
+</body>
+
+</html>
